@@ -91,10 +91,10 @@ let nextLevel = () => {
 
 //funcao para game over
 let gameOver = () =>{
+	window.navigator.vibrate(200);
 	alert(`Pontuação: ${score}!\n Você perdeu o jogo!\n Clique em OK para iniciar um novo jogo!`);
 	order = [];
 	clickedOrder = [];
-
 	playGame();
 }	
 
@@ -109,6 +109,6 @@ let playGame = () => {
 green.onclick = () => click(0);
 red.onclick = () => click(1);
 yellow.onclick = () => click(2);
-blue.onclick = () => click(3 );
+blue.onclick = () => click(3);
 
 playGame();
