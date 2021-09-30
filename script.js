@@ -88,22 +88,8 @@ let nextLevel = () => {
 	shuffleOrder();
 }
 
-let vibrate = () => {
-	var intervalo = setInterval(() => {
-		window.navigator.vibrate(600);
-		window.navigator.vibrate(600);
-		window.navigator.vibrate(600);	
-	}, 1000);
-
-	setTimeout(() => {
-		clearInterval(intervalo)
-	}, 1000);
-	
-}
-
 //funcao para game over
 let gameOver = () =>{
-	vibrate();
 	alert(`Pontuação: ${score}!\n Você perdeu o jogo!\n Clique em OK para iniciar um novo jogo!`);
 	order = [];
 	clickedOrder = [];
